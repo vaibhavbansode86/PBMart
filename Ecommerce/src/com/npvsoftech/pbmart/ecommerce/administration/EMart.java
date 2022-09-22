@@ -12,7 +12,7 @@ public class EMart {
 
 		System.out.println(StringUtils.center(StringUtils.center("Welcome To PBMart", 130 - 112), 130, "*"));
 	}
-
+//trail for merge
 	public static void afterLogedInCust(int customer_id) throws InterruptedException {
 		CustomerFuctionality cF = new CustomerFuctionality();
 		cF.displayProducts();
