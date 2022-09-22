@@ -7,13 +7,7 @@ import com.npvsoftech.pbmart.ecommerce.registration.CustomerManagement;
 
 public class EMart {
 	public static Scanner sc = new Scanner(System.in);
-<<<<<<< HEAD
 
-||||||| 3fa12be
-   
-=======
-   //THIS IS MAIN CLASS
->>>>>>> NADEEM
 	static {
 
 		System.out.println(StringUtils.center(StringUtils.center("Welcome To PBMart", 130 - 112), 130, "*"));
