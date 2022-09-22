@@ -16,7 +16,7 @@ package com.npvsoftech.pbmart.ecommerce.registration;
 				
 				Class.forName("com.mysql.cj.jdbc.Driver");
 				
-				this.connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/user","root","online123");
+				this.connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/user","root","Pranju@1262");
 				
 				//prepareStatement = connection.prepareStatement("insert into CustomerDetails(firstName,lastName,birthdate,city,dist,state,pincode,email)values(?,?,?,?,?,?,?,?)");
 									
