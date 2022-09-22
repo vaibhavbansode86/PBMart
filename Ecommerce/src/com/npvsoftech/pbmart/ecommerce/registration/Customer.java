@@ -254,9 +254,17 @@ public abstract class Customer implements Authenticable {
 
 				}
 			}
-			prepareStatement = connection.prepareStatement(
-					"update minipro.userDetails set password=" + newPass + " where userId=" + user_id + ";");
-			prepareStatement.executeUpdate();
+			try {
+				prepareStatement = connection.prepareStatement("delete from minipro.userDetails where userId ="+user_id+";");
+				prepareStatement.executeUpdate();
+				prepareStatement = connection.prepareStatement("insert into minipro.userDetails (userId,password) values (?,?);");
+				prepareStatement.setInt(1, user_id);
+				prepareStatement.setString(2, newPass);
+				prepareStatement.executeUpdate();
+			
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		} else {
 			Format1.lineFormatting();
 			System.err.println("\nAuthentification failed!!!");
