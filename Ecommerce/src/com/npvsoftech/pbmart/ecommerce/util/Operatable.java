@@ -9,4 +9,5 @@ public interface Operatable {
 	public abstract int placeorder(int customer_id);
 	public abstract void displayBill(int customer_id);
 
+	
 }
