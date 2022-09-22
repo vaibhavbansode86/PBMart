@@ -112,10 +112,7 @@ public class Format1 {
 		System.out.println(StringUtils.center(StringUtils.center(totatPrice, 13 - 1), 13, "|"));
 	}
 	
-//	public static void purchaseHistoryHeading(String customerId) {
-//		System.out.println(StringUtils.rightPad("+", 76 - 1, "-") + "+");
-//		System.out.println(StringUtils.center(StringUtils.center("Custemor Id: "+customerId+"   purchase history", 76 - 2), 76, "|"));
-//	}
+
 	
 	public static void purchaseHistoryHeading(String customerId,String fName,String lName,String city,String pincode) {
 		
@@ -141,53 +138,4 @@ public class Format1 {
 		System.out.println(StringUtils.center(StringUtils.center(time, 15 - 1), 15, "|"));
 	}
 	
-	
-	
-	
-	public static void main(String[] args) {
-		int id1=2;
-		Integer id=id1;
-		//formatAdminProductBorder();
-		adminProductListHeading();
-		formatAdminProductBorder();
-		formatedAdminProductList("product_id","product_Name","description","price","quantity" );
-		formatAdminProductBorder();
-		formatedAdminProductList(id.toString(),"APPLE iPhone 13","Handset, USB-C to Lightning Cable, Documentation","69900","100" );
-		formatAdminProductBorder();
-		
-		//Integer id=2;
-		customerProductListHeading();
-		formatCustomerProductBorder();
-		formatedCustomerProductList("product_id","product_Name","description","price" );
-		formatCustomerProductBorder();
-		formatedCustomerProductList(id.toString(),"APPLE iPhone 13","Handset, USB-C to Lightning Cable, Documentation","69900" );
-		formatCustomerProductBorder();
-		
-		formatAdminCustomerHeading();
-		formatAdminCustomerBorder();
-		formatedAdminCustomerList("Customer_Id","First Name","Last Name","Birth date", 
-				"City","District","State","Pincode","Email Id");
-		formatAdminCustomerBorder();
-		formatedAdminCustomerList(id.toString(),"Nadem","Sheikh","12-12-1998", 
-				"Akola","Akola","Maharashtra","415409","nadeem1998@gmail.com");
-		formatAdminCustomerBorder();
-		starLineFormatting();
-		
-		billBorder();
-		billFormat("Product Id","Product Name","Quntity","Qty*Price");
-		billBorder();
-		billFormat("1","APPLE iPhone 13","10","1000000");
-		billBorder();
-		totalBill("1000000");
-		
-		purchaseHistoryHeading("6","Salman","Khan","Mumbai","123");
-		purchaseHistoryBorder();
-		purchaseHistoryFormat("Product Id","Product Name","Quntity","Date","Time");
-		purchaseHistoryBorder();
-		
-		
-		
-	}
-	
-
 }
